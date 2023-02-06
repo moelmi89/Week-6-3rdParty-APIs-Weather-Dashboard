@@ -8,6 +8,42 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
+    <header class="header1">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <main>
+        <aside class="search-container">
+            <button id="search-button">Click Here</button>
+            <input type="text" id="location" placeholder="Enter A Location">
+            <div id="error"></div>
+            <div class="recent-section">
+                <h2>Recent Locations</h2>
+                <ul id="recent-locations"></ul>
+            </div>
+        </aside>
+
+        <article class="weather-container">
+            <div id="weather">
+                <div class="weather-header">
+                    <h2 class="weather-location" id="location-name">Enter a location</h2>
+                    <span class="weather-date"></span>
+                    <span class="weather-icon"></span>
+                </div>
+                <div class="weather-info">
+                    <span>Temp</span>
+                    <span id="temperature">-</span>
+        
+                    <span>Wind Speed</span>
+                    <span id="wind-speed">-</span>
+        
+                    <span>Humidity</span>
+                    <span id="humidity">-</span>
+                </div>
+            </div>
+            <div id="forecast" class="forecast-days"></div>
+        </article>
+    </main>
     
 </body>
 </html>
