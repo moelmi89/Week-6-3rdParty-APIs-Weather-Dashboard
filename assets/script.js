@@ -12,7 +12,24 @@ const weatherIcon = document.getElementById("weather-icon");
 const forecastDiv = document.getElementById("forecast");
 const recent = document.getElementById("recent-locations");
 
-function getLocation(event)
+function loadRecent() {
+
+	while (recent.firstChild) {
+		recent.removeChild(recent.firstChild);
+	}
+
+	for (let i = 0; i < localStorage.length; i++) {
+		const name = localStorage.getItem(localStorage.key(i));
+		const btn = document.createElement("BUTTON");
+
+		btn.innerText = name;
+		btn.addEventListener('click', e => {
+			dataFetch(name);
+		})
+
+		recent.append(btn);
+	}
+}
 
 function onClickSearchButton(e) {
     const city = searchLocation.value;
