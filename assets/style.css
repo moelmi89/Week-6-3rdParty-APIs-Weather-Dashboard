@@ -45,3 +45,31 @@ main{
 #search-button:hover{
     background-color: #ebedf4;
 }
+
+#error{
+    color: brown;
+}
+
+#error::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    background: #a1a2a2;
+    height: 2px;
+}
+
+.recent-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-section button{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.recent-section button:hover{
+    background-color: #313861;
+    color: whitesmoke;
+}
