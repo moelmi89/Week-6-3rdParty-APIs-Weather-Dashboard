@@ -4,51 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Weather Dashboard</title>
 </head>
-<body>
-    <header class="header1">
-        <h1>Weather Dashboard</h1>
-    </header>
+<body onload="loadRecent()">
 
-    <main>
-        <aside class="search-container">
-            <h2>Find A Location</h2>
-            <button id="search-button">Click Here</button>
-            <input type="text" id="location" placeholder="Enter A Location">
-            <div id="error"></div>
-            <div class="recent-section">
-                <h3>Recent Locations</h3> 
-                <ul id="recent-locations"></ul>
+<header class="header1">
+    <h1>Weather Dashboard</h1>
+</header>
+
+<main>
+    <aside class="search-container">
+        <h2>Find A Location</h2>
+
+        <input type="text" id="location" placeholder="Enter A Location">
+        <button id="search-button">Search</button>
+
+        <div id="error"></div>
+
+        <div class="recent-section">
+            <h3>Recent Locations</h3>
+            <div id="recent-locations">
             </div>
-        </aside>
+        </div>
+    </aside>
 
-        <article class="weather-container">
-            <div id="weather">
-                <div class="weather-header">
-                    <h2 class="weather-location" id="location-name">Enter a location</h2>
-                    <span class="weather-date"></span>
-                </div>
-                <div class="weather-info">
-                    <span>Temp</span>
+    <article class="weather-container">
+
+        <div id="weather">
+            <div class="weather-header">
+                <h2 class="weather-location" id="location-name">Enter a location</h2>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <h2 class="weather-date" id="weather-date"></h2>
+                &nbsp; &nbsp; &nbsp; &nbsp;
+                <img id="weather-icon">
+            </div>
+
+            <div class="weather-info">
+                <div>
+                    <span>Temp: </span>
                     <span id="temperature">-</span>
-        
-                    <span>Wind Speed</span>
+                </div>
+
+                <div>
+                    <span>Wind Speed: </span>
                     <span id="wind-speed">-</span>
-        
-                    <span>Humidity</span>
+                </div>
+
+                <div>
+                    <span>Humidity: </span>
                     <span id="humidity">-</span>
                 </div>
             </div>
-            <div id="forecast" class="forecast-days"></div>
-        </article>
-    </main>
-    
-    <Footer class="footer">
-        <p>this is the footer</p>
-    </Footer>
+        </div>
+        <div id="forecast" class="forecast-days">
+
+        </div>
+    </article>
+</main>
+
+
+<script src="assets/script.js"></script>
 </body>
 </html>
 
-<script src="/assets/script.js"></script>

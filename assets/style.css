@@ -1,34 +1,47 @@
 
 * {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0; 
-    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+main{
+    display: flex;
+    flex-direction: row;
 }
 
 .header1 {
     width: 100%;
-    background: linear-gradient(90deg, #313861 0%, #605d6b 100%);
-    color: #0c0b0b;
+    height: 50px;
+    background: linear-gradient(90deg, #1f4837 0%, #3b8e65 100%);
+    color: #090909;
     text-align: center;
-    padding: 1%;
-    margin-bottom: 1%;
+    display: flex;
+}
+
+.header1 h1{
+    padding: 0;
+    margin: auto;
 }
 
 .search-container {
+    width: 200px;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+   
+}
 
+
+#location, #search-button {
+    height: 20px;
+    margin-bottom: 10px;
 }
 
 #search-button {
-
-}
-.footer {
-    color: #4a5ab2;
-    text-align: center;
+    background-color: #1f4837;
+    border: 1px
 }
 
-.weather-container {
-    border: 1px;
-    padding: 2%;
-    margin-bottom: auto;
-    display: inline;
+#search-button:hover{
+    background-color: #ebedf4;
 }
