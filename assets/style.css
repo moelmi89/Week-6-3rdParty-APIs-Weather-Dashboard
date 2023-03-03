@@ -73,3 +73,28 @@ main{
     background-color: #313861;
     color: whitesmoke;
 }
+
+.weather-container {
+    padding: 10px;
+    width: 100%;
+}
+
+#weather{
+    padding: 10px;
+}
+
+.weather-header{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.weather-info div{
+    margin-bottom: 20px;
+}
