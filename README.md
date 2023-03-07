@@ -29,4 +29,4 @@ THEN I am again presented with current and future conditions for that city
 
 ## Link to Deployed Site
 
-https://moelmi89.github.io/Week-5-Third-Party-API-Calender/
+https://moelmi89.github.io/Week-6-Third-Party-API-Weather-Dashboard/
