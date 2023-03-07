@@ -98,3 +98,18 @@ main{
 .weather-info div{
     margin-bottom: 20px;
 }
+
+.forecast-days{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.forecast-tile{
+    width: 20%;
+    background: linear-gradient(90deg, #1f4837 0%, #3b8e65 100%);
+    color: black  ;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
